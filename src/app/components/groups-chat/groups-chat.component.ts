@@ -24,7 +24,7 @@ export class GroupsChatComponent implements OnInit {
   }
 
   async NewChat(sChatName: string){
-    if(sChatName && this.ChatMembers.length > 1){
+    if(sChatName && this.ChatMembers.length > 0){
       let chat: Chat = {
         name: sChatName,
         logo: "sChatLogo",
