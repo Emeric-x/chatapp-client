@@ -1,0 +1,34 @@
+#chatHeader {
+    width: 100%;
+    top: 0;
+}
+
+#chatHeader h1 {
+    text-align: center;
+}
+
+#chatBody {
+    width: 100%;
+    height: 80%;
+    overflow-x: hidden;
+    padding: 5px;
+    margin-bottom: 5%;
+}
+
+.chatMessage {
+    box-shadow: rgba(20, 11, 197, 0.542) 0px 6px 7px, rgb(20, 11, 197) 0px -3px 5px;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 5px;
+    width: 100%;
+}
+
+#chatFooter {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#chatFooter textarea {
+    width: 80%;
+}
