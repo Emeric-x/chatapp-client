@@ -23,11 +23,11 @@ export class GroupsChatComponent implements OnInit {
     this.UsersService.LoggedUserData = await this.UsersService.GetUserById(this.UsersService.LoggedUserData?._id!)
   }
 
-  async NewChat(sChatName: string){
-    if(sChatName && this.ChatMembers.length > 0){
+  async NewChat(sChatName: string, sChatLogo: string){
+    if(sChatName && sChatLogo && this.ChatMembers.length > 0){
       let chat: Chat = {
         name: sChatName,
-        logo: "sChatLogo",
+        logo: sChatLogo,
         users: [] as any
       }
 

@@ -11,13 +11,13 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   GetAllUsers(){
-    return this.http.get(`https://aqueous-earth-78773.herokuapp.com/users`)
+    return this.http.get(`http://localhost:3000/users`)
   }
 
   SignUpUser(sUser: User){
     const headers = { 'content-type': 'application/json'}
     const body=JSON.stringify(sUser);
-    return this.http.post(`https://aqueous-earth-78773.herokuapp.com/users/SignUp`, body, {'headers':headers})
+    return this.http.post(`http://localhost:3000/users/SignUp`, body, {'headers':headers})
   }
 
   SignInUser(sLogin: string, sPwd: string){
@@ -26,25 +26,29 @@ export class ApiService {
       login: sLogin,
       password: sPwd,
     });
-    return this.http.post(`https://aqueous-earth-78773.herokuapp.com/users/SignIn`, body, {'headers':headers})
+    return this.http.post(`http://localhost:3000/users/SignIn`, body, {'headers':headers})
   }
 
   GetUserByLogin(sLogin: string){
-    return this.http.get(`https://aqueous-earth-78773.herokuapp.com/users/GetByLogin/${sLogin}`)
+    return this.http.get(`http://localhost:3000/users/GetByLogin/${sLogin}`)
   }
 
   NewChat(sChat: Chat){
     const headers = { 'content-type': 'application/json'}
     const body=JSON.stringify(sChat);
-    return this.http.post(`https://aqueous-earth-78773.herokuapp.com/chats`, body, {'headers':headers})
+    return this.http.post(`http://localhost:3000/chats`, body, {'headers':headers})
   }
 
   GetChatById(sId: string){
-    return this.http.get(`https://aqueous-earth-78773.herokuapp.com/chats/${sId}`)
+    return this.http.get(`http://localhost:3000/chats/${sId}`)
+  }
+
+  GetMessagesByChatId(sChat_Id: string){
+    return this.http.get(`http://localhost:3000/chats/messages/${sChat_Id}`)
   }
 
   GetUserById(sId: string){
-    return this.http.get(`https://aqueous-earth-78773.herokuapp.com/users/${sId}`)
+    return this.http.get(`http://localhost:3000/users/${sId}`)
   }
 
   SendMessage(sMessage: string, sAuthor: User, sChat_id: string){
@@ -54,7 +58,7 @@ export class ApiService {
       message: sMessage,
       author: sAuthor
     });
-    return this.http.post(`https://aqueous-earth-78773.herokuapp.com/chats/messages`, body, {'headers':headers})
+    return this.http.post(`http://localhost:3000/chats/messages`, body, {'headers':headers})
   }
 
   ChatAlreadyCreated(sChat: Chat, sUser_chats: any){
@@ -63,6 +67,6 @@ export class ApiService {
       chat: sChat,
       user_chats: sUser_chats
     });
-    return this.http.post(`https://aqueous-earth-78773.herokuapp.com/chats/ChatAlreadyCreated`, body, {'headers':headers})
+    return this.http.post(`http://localhost:3000/chats/ChatAlreadyCreated`, body, {'headers':headers})
   }
 }

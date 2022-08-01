@@ -26,10 +26,10 @@
         <label for="chatName">Name</label>
         <input type="text" id="chatName" #chatName>
 
-        <!--<br>
+        <br>
 
         <label for="chatLogo">Logo</label>
-        <input type="file" id="chatLogo" #chatLogo>-->
+        <input type="file" id="chatLogo" #chatLogo>
 
         <br>
 
@@ -42,7 +42,7 @@
         <br>
         <br>
 
-        <button (click)="this.NewChat(chatName.value)">Create</button>
+        <button (click)="this.NewChat(chatName.value, chatLogo.value)">Create</button>
 
         <br>
         <br>

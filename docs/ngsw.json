@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1659119373117,
+  "timestamp": 1659342765439,
   "index": "Chat-App/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "Chat-App/favicon.ico",
         "Chat-App/index.html",
-        "Chat-App/main.139d7b4a2fb8afc9.js",
+        "Chat-App/main.9720a1b8bff9b03f.js",
         "Chat-App/manifest.webmanifest",
         "Chat-App/polyfills.0461e77eed856c7d.js",
         "Chat-App/runtime.7a723ee51def008e.js",
@@ -53,9 +53,9 @@
     "Chat-App/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "Chat-App/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "Chat-App/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "Chat-App/index.html": "fd98cf5f4213db8de3849ba1e77449cf3945d69b",
-    "Chat-App/main.139d7b4a2fb8afc9.js": "7706f3df38221c1d367cfe2d6948e93291d46a57",
-    "Chat-App/manifest.webmanifest": "98ae0de81f836ccbd81cd41f01a570875080b959",
+    "Chat-App/index.html": "28adf82a88092fe282f5e345aff7f6eb6a80bce4",
+    "Chat-App/main.9720a1b8bff9b03f.js": "eb0c632793e87b4167385d4b3e0075b960001266",
+    "Chat-App/manifest.webmanifest": "2b88719c5720f79ed1d9822d6e30259560a4f166",
     "Chat-App/polyfills.0461e77eed856c7d.js": "9d95807c89129df9a83fd67067ee4e774566c884",
     "Chat-App/runtime.7a723ee51def008e.js": "8b8fc5e6bb2412b59a1342110a023dc3305dfeeb",
     "Chat-App/scripts.3ab7b00d5fc3ec38.js": "f72db3c3075024324a4d648abe9a7d556e013738",
